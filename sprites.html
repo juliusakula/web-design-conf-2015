@@ -1,0 +1,37 @@
+<style>
+.tuna {
+  /* use the timing function steps() to chunk the animation into 12 equal pieces */
+  background: url(http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  margin: 100px auto 0;
+  animation-name: walkingCat;
+  animation-timing-function: steps(12);
+  animation-duration: 1s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+}
+
+/* The magical formula for making steps() perfectly work is 
+
+percentage($height / ($height - ($height / $steps)))
+
+So 
+2400 / (2400 - (2400 / 1 )) * 100%;
+2400 / (2400 - 200) * 100%;
+2400 / 2200 * 100%;
+1.090909 * 100%
+125%
+
+Nootch.
+
+*/
+@keyframes walkingCat {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 109.09%; }
+}
+
+
+p {text-align: center;}
+</style>
+<div class="tuna"></div>
