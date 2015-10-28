@@ -1,10 +1,12 @@
 <style>
 .animated-thing { 
-    animation: black-to-white 3s infinite alternate-reverse;
+    background: #000;
+    animation: black-to-white 0.5s infinite alternate-reverse;
 }
 @keyframes black-to-white {
-    0% {background: #000; }
-    100% {background: #fff }
+    0% {color: #FFD700; }
+    50% {color: #FFA500}
+    100% {color: #FFFF00}
 }
 </style>
 <h1 class="animated-thing">I'm animated</h1>
