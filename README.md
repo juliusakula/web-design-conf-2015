@@ -8,7 +8,32 @@ animation is like typography, not everything should be big and attention grabbin
 "Even when reclining on their couch they are impatient with their mobile device"
 
 ### kinds of animation
+* static animation
+ * does one thing 
+ * starts and stops
+* stateful animation
+ * default state --> event --> predefined state
+* dynamic animation
+ * they determine their own outcome and are not entirely possible with only CSS
+
 * causal animation
 * decorative animation
-* stateful animation
 * supplemental animation
+
+### ways of triggering states
+
+* browser events
+ * loading 
+ * scrolling (waypoint.js)
+* human events
+ * hovering
+ * clicking
+* timed events
+ * timeouts
+ * choreography
+
+### Javascript animation event listeners
+
+* animationstart
+* animationend
+* animationiteration

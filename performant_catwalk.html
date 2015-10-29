@@ -1,0 +1,25 @@
+<style>
+.tuna {
+  /* steps causes the animation to chunk into 12 equal pieces */
+  background-color: red;
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  top: 50%; left: 50%;
+  overflow: hidden;
+}
+img { 
+  animation: walk-cycle 1s steps(12) infinite;
+}
+
+@keyframes walk-cycle {  
+  0% { transform: translateY(0px) }
+  100% { transform: translateY(-2391px) }
+}
+
+p {text-align: center;}
+</style><div class="tuna">
+<img src="http://stash.rachelnabors.com/animation-workshop/sprite_catwalk.png"/>
+</div>
+
+<p>Awwww yeah...</p>
