@@ -15,9 +15,8 @@ animation is like typography, not everything should be big and attention grabbin
  * default state --> event --> predefined state
 * dynamic animation
  * they determine their own outcome and are not entirely possible with only CSS
-
-* causal animation
 * decorative animation
+* causal animation
 * supplemental animation
 
 ### ways of triggering states
@@ -37,3 +36,17 @@ animation is like typography, not everything should be big and attention grabbin
 * animationstart
 * animationend
 * animationiteration
+
+
+### When to animate?
+
+does it...
+
+* causality (show cause--effect)
+* feedback
+* location
+* progression
+* transition
+* physics
+
+At least two of these. Reach for low hanging fruit.
